@@ -51,22 +51,27 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 250px;
-  padding: 10px;
+  padding: 16px;
   color: $basic-white;
   background-color: $main-color;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 10px;
   border: none;
 
   &:hover {
-    background-color: $btn-hover;
+    background-color: $basic-white;
+    color: $main-color;
   }
 
   &:active {
     opacity: 0.8;
+  }
+
+  &:disabled {
+    background: $btn-disabled;
+    color: $btn-disabled-color;
   }
 }
 
@@ -76,22 +81,25 @@ button {
   padding: 0 50px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
 
 .heading {
   margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 400;
-
-  &--small {
-    margin-bottom: 25px;
-    font-size: 36px;
-  }
+  font-family: "Ida", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
+    font-size: 32px;
+  }
+}
+
+.mobile-only {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
   }
 }

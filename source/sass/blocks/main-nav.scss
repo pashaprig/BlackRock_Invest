@@ -1,13 +1,25 @@
 .main-nav {
-  //Desktop-first
   display: flex;
   align-items: center;
 
   .btn {
-    display: none;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid $basic-white;
+
+    &:hover {
+      background: $main-color;
+      color: $basic-white;
+      border-color: $main-color;
+    }
+
+    a:hover {
+      all: unset;
+    }
   }
 
   @media (max-width: $tablet-width) {
+    z-index: 4;
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -19,18 +31,22 @@
     background: $white-text;
 
     .btn {
-      display: flex;
-      margin-top: 10vh;
-      width: max-content;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: fit-content;
+      padding: 16px;
+      background: $main-color;
+      min-width: 240px;
+
+      a {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $basic-white;
+      }
     }
 
     & svg {
       fill: $main-color;
-    }
-
-    & .main-nav__item > a {
-      color: $bcg-black;
     }
 
     &--closed {
@@ -61,7 +77,6 @@
   gap: 34px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 25px;
     display: block;
 
     &--bottom {
@@ -78,7 +93,8 @@
   }
 
   a {
-    color: $text-black;
+    color: $basic-white;
+
     &:hover {
       opacity: 0.8;
     }
@@ -99,9 +115,21 @@
       display: flex;
       min-height: 10px;
       margin-top: 50px;
-      box-shadow: 0px 0px 0px 0px rgba(222, 222, 222, 0.1), 0px 4px 10px 0px rgba(222, 222, 222, 0.1),
-      0px 18px 18px 0px rgba(222, 222, 222, 0.09), 0px 40px 24px 0px rgba(222, 222, 222, 0.05),
-      0px 71px 28px 0px rgba(222, 222, 222, 0.01), 0px 111px 31px 0px rgba(222, 222, 222, 0);
+      box-shadow:
+        0px 0px 0px 0px rgba(222, 222, 222, 0.1),
+        0px 4px 10px 0px rgba(222, 222, 222, 0.1),
+        0px 18px 18px 0px rgba(222, 222, 222, 0.09),
+        0px 40px 24px 0px rgba(222, 222, 222, 0.05),
+        0px 71px 28px 0px rgba(222, 222, 222, 0.01),
+        0px 111px 31px 0px rgba(222, 222, 222, 0);
+    }
+
+    .page-header__logo {
+      color: $basic-black;
+    }
+
+    a {
+      color: $basic-black;
     }
   }
 }
@@ -133,8 +161,8 @@
   right: 0;
   width: 45px;
   height: 4px;
-  background-color: $main-color;
-  box-shadow: 0 12px 0 0 $main-color, 0 24px 0 0 $main-color;
+  background-color: $basic-white;
+  box-shadow: 0 12px 0 0 $basic-white;
   border-radius: 15px;
   transition: all ease-in-out 500ms;
 }
@@ -163,7 +191,7 @@
     right: 0;
     width: 45px;
     height: 4px;
-    background-color: $main-color;
+    background-color: $btn-disabled;
     border-radius: 15px;
     transition: all ease-in-out 500ms;
   }
@@ -175,15 +203,5 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after {
-    opacity: 0.6;
-  }
-
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
   }
 }
