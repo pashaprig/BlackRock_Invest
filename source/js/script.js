@@ -69,14 +69,14 @@ class App {
             breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              dots: true,
+              arrows: true,
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              dots: true,
+              arrows: true,
             }
           },
         ]
