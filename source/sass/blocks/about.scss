@@ -1,0 +1,97 @@
+.about {
+  display: flex;
+  padding-top: 120px;
+  padding-left: 0;
+  color: $basic-white;
+  background: no-repeat 10% 0 $basic-black url('../img/bcg/about-bcg.webp');
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: unset;
+    background: no-repeat $basic-black url('../img/bcg/about-bcg-mob.webp');
+  }
+}
+
+.about__img {
+  @media (max-width: $tablet-width) {
+    max-width: calc(100% + 30px);
+    height: auto;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 76px;
+    left: 0;
+    display: block;
+    width: 3px;
+    height: 394px;
+    background: no-repeat url('../img/bcg/scroll-bcg.webp');
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0;
+      display: block;
+      width: 3px;
+      height: 378px;
+      background: no-repeat url('../img/bcg/scroll-bcg.webp');
+    }
+  }
+}
+
+.about__heading {
+  margin-bottom: 40px;
+  color: $main-color;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.about__text {
+  margin-bottom: 105px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.about__quote {
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  cite {
+    font-style: normal;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    text-transform: none;
+
+    cite {
+      font-size: 20px;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+

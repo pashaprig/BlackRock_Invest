@@ -117,10 +117,12 @@
         <p class="page-header__logo">BlackRock Invest</p>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item mobile-only"><p class="page-header__logo">BlackRock Invest</p></li>
+            <li class="main-nav__item mobile-only">
+              <p class="page-header__logo">BlackRock Invest</p>
+            </li>
             <li class="main-nav__item"><a href="#video">Презентация</a></li>
             <li class="main-nav__item"><a href="#partners">Партнёры</a></li>
-            <li class="main-nav__item"><a href="#about-bank">О проекте</a></li>
+            <li class="main-nav__item"><a href="#about">О проекте</a></li>
             <li class="main-nav__item"><a href="#license">Инвестирование</a></li>
             <li class="main-nav__item btn"><a href="#leadform1">Зарегистрироваться</a></li>
           </ul>
@@ -130,11 +132,13 @@
         </nav>
       </header>
 
-      <h1 class="promo__heading">Подключайтесь к инвестиционному проекту BlackRock Invest и зарабатывайте от&nbsp;4&nbsp;000&nbsp;€ ежемесячно!</h1>
+      <h1 class="promo__heading">Подключайтесь к инвестиционному проекту BlackRock Invest и зарабатывайте
+        от&nbsp;4&nbsp;000&nbsp;€ ежемесячно!</h1>
 
       <div class="promo__video-wrapper">
         <div class="promo__wrapper">
-          <p class="promo__about">Для всех новых пользователей «BlackRock Invest» после регистрации предоставляет список из 10 самы прибыльных акций и криптовалют с месячным ростом портфеля от 100%</p>
+          <p class="promo__about">Для всех новых пользователей «BlackRock Invest» после регистрации предоставляет список
+            из 10 самы прибыльных акций и криптовалют с месячным ростом портфеля от 100%</p>
           <form action="#" class="form" method="POST" id="leadform1">
             <input type="text" name="firstname" id="firstname" placeholder="Имя">
             <input type="text" name="lastname" id="lastname" placeholder="Фамилия">
@@ -176,7 +180,6 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
 
     <section class="partners container" id="partners">
@@ -200,113 +203,20 @@
       </ul>
     </section>
 
-    <section class="calculator container" id="calculator">
-      <div class="calculator__wrapper">
-        <h2 class="profit__heading heading heading--small">Калькулятор</h2>
-        <p class="calculator__about">Просчитайте ваш доход всего за пару минут</p>
+    <section class="about container" id="about">
+      <picture>
+        <source type="image/webp" media="(max-width: 768px)" srcset="img/img/lauren-mob.webp">
+        <source type="image/webp" srcset="img/img/lauren.webp">
+
+        <source media="(max-width: 768px)" srcset="img/img/lauren-mob.png">
+        <img class="about__img" src="img/img/lauren.png" width="659" height="586" alt="Лоренс Финк">
+      </picture>
+      <div class="about__wrapper">
+        <h2 class="about__heading heading">BlackRock Invest</h2>
+        <p class="about__text">Американский инвестиционный фонд с мировым признанием и штаб-квартирой в Нью-Йорке, он является одним из самых крупных в мире и владеет наибольшими активами под управлением в размере 8,59 трлн. Для обычных граждан они запускают новый инвестиционный фонд под названием 'BlackRock Invest', который предоставляет возможность приобретения акций и криптовалюты.</p>
+        <blockquote class="about__quote"><cite>Лоренс Финк:</cite> ”Я гарантирую что каждый из вас сможет заработать также как и BlackRock, мы анализируем весь рынок 24/7 и предоставляем вам только свежую информацию!»</blockquote>
       </div>
 
-      <div class="calculator__wrapper">
-        <div class="profit__wrapper">
-          <div class="calculator__range">
-            <div class="profit__sum">
-              <label class="">Сколько хотите заработать?</label>
-              <h3 class="" id="calcResult"></h3>
-            </div>
-            <input type="text" class="js-range-slider" name="my_range" value="150" />
-            <p>Выберите срок инвестирования</p>
-            <input type="text" class="js-range-slider2" name="my_range2" value="150" />
-            <div class="profit__amount">
-              <label class="">Сумма инвестирования</label>
-              <span class="heading" id="profitValue">50000 ₸</span>
-            </div>
-            <a href="#leadform1" class="btn">Отправить заявку</a>
-            <p class="calculator__att">Предварительный расчет. Не является публичной офертой</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-bank container" id="about-bank">
-      <h2 class="heading heading--small">Про Halyk банк</h2>
-      <p class="about-bank__about about-bank__about--pr220">Наша разработанная командой технология автотрейдинга
-        позволяет зарабатывать на акциях, индексах. Программа успешно внедрена в 12 лицензированных брокерах СНГ и
-        Европы. Она основана на блокчейне Halyk банка, специально оптимизированном для быстрой торговли. С
-        использованием искусственного интеллекта и анализа котировок опционов на ведущих биржах мира, алгоритм
-        обеспечивает успешные сделки в 98,3% случаев.</p>
-      <ul class="about-bank__infos">
-        <li class="about-bank__item">
-          <picture>
-            <source type="image/webp" srcset="img/img/desk.webp">
-            <img width="545" height="340" class="about-bank__img" src="img/img/desk.jpg" alt="График на планшете">
-          </picture>
-          <div class="about-bank__item-wrapper">
-            <h3 class="about-bank__sub-heading">Информируем, что с 15&nbsp;июня 2023 года по 31&nbsp;июля 2023 года на
-              AIX будет проходить размещение выпуска долларовых дисконтных облигаций АО «Home Credit Bank»</h3>
-            <p class="about-bank__about">AIX (Astana International Exchange) является финансовой биржей, расположенной в
-              Астане, Казахстан. Она предоставляет инвесторам возможность торговать различными финансовыми
-              инструментами, включая акции, облигации и другие ценные бумаги.</p>
-            <a href="#leadform1" class="btn">Купить облигации</a>
-          </div>
-        </li>
-
-        <li class="about-bank__item about-bank__item--reverse">
-          <picture>
-            <source type="image/webp" srcset="img/img/forbes.webp">
-            <img width="545" height="340" class="about-bank__img" src="img/img/forbes.jpg" alt="Forbes">
-          </picture>
-          <div class="about-bank__item-wrapper">
-            <h3 class="about-bank__sub-heading">Журнал “Forbes” (Forbes Global 2000)</h3>
-            <p class="about-bank__about">Halyk банк- второй среди банков СНГ и первый среди казахстанских компаний по
-              объему чистой прибыли</p>
-            <a href="#leadform1" class="btn">Стать частью проекта</a>
-          </div>
-        </li>
-
-        <li class="about-bank__item">
-          <picture>
-            <source type="image/webp" srcset="img/img/ceo.webp">
-            <img width="545" height="340" class="about-bank__img" src="img/img/ceo.jpg"
-              alt="CEO на фоне постера с логотипом банка">
-          </picture>
-          <div class="about-bank__item-wrapper">
-            <h3 class="about-bank__sub-heading">МФО KMF разместила 2-й выпуск облигаций общим объемом 10 млрд тенге</h3>
-            <p class="about-bank__about">16 мая 2023 года Микрофинансовая организация «КMF (КМФ)» (далее – «KMF»)
-              успешно провела первичное размещение второго выпуска облигаций на сумму 10 млрд тенге сроком на 1 год.
-              Финансовое консультирование и андеррайтинг данного размещения было осуществлено АО «Halyk Finance».</p>
-            <a href="#leadform1" class="btn">Купить облигации</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="license container" id="license">
-      <div class="license__gradient"></div>
-      <div class="license__wrapper">
-        <h2 class="license__heading heading">Лицензия на использование Halyk Bank в&nbsp;биржевой деятельности
-        </h2>
-        <picture>
-          <source type="image/webp" srcset="img/img/license.webp">
-          <img class="license__img" src="img/img/license.jpg" height="389" width="275" alt="Лицензия">
-        </picture>
-
-        <button class="btn" data-open-modal>
-          <svg width="74" height="56">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-          <span>Развернуть лицензию</span>
-        </button>
-
-        <dialog data-modal class="license__dialog">
-          <div class="license__dialog-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/img/license.webp">
-              <img class="license__img" src="img/img/license.jpg" height="942" width="666" alt="Лицензия">
-            </picture>
-            <button data-close-modal><span class="main-nav__open-btn-text visually-hidden">Закрыть</span></button>
-          </div>
-        </dialog>
-      </div>
     </section>
 
     <section class="start container" id="start">
