@@ -1,0 +1,45 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  padding-top: 74px;
+  padding-bottom: 74px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 45px;
+  }
+}
+
+.partners__heading {
+  text-align: center;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 43px;
+  border-top: 1px solid $basic-black;
+  border-bottom: 1px solid $basic-black;
+
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 60px;
+    padding: 32px 27px;
+  }
+}
+
+.partnrs__item {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $basic-black;
+  }
+
+  &:hover {
+    svg {
+      fill: $main-color;
+    }
+  }
+}
